@@ -15,7 +15,7 @@ public class SpringBootDubboConsumerExampleApplication {
         SpringApplication.run(SpringBootDubboConsumerExampleApplication.class, args);
     }
 
-    @DubboReference
+    @DubboReference(version = "2.0")
     private ISayHelloService sayHelloService;
 
     @RequestMapping("/test")

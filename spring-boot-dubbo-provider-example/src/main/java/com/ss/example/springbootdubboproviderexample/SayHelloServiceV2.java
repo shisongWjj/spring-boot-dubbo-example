@@ -9,10 +9,10 @@ import org.apache.dubbo.config.annotation.DubboService;
  * @author shisong
  * @date 2020-08-11
  */
-@DubboService(registry = {"shanghai","hunan"},version = "1.0")
-public class SayHelloService implements ISayHelloService {
+@DubboService(registry = {"shanghai","hunan"},version = "2.0")
+public class SayHelloServiceV2 implements ISayHelloService {
     @Override
     public String sayHello(String name) {
-        return name + " say hello world 1.0";
+        return name + " say hello world 2.0";
     }
 }
