@@ -11,11 +11,11 @@ import org.apache.dubbo.config.annotation.Method;
  * @author shisong
  * @date 2020-08-11
  */
-@DubboService(registry = {"shanghai","hunan"},version = "2.0",methods = {
+@DubboService(registry = {"shanghai","hunan"},version = "2.0"/*,methods = {
         @Method(name = "sayHello",arguments = {
                 @Argument()
         })
-})
+}*/)
 public class SayHelloServiceV2 implements ISayHelloService {
     @Override
     public String sayHello(String name) {
